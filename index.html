@@ -1,28 +1,56 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Till min favorit ❤️</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>För Dig ❤️</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    <div class="container">
-        <h1>Hej älskling ❤️</h1>
-        <p>
-            Jag ville göra något speciellt för dig. Så därför skapade jag denna sidan
-            som du alltid kan gå in på när du har en dålig eller en bra dag. 
-            
-        </p>
+  <!-- Falling hearts layer -->
+  <div id="hearts" aria-hidden="true"></div>
 
-        <p>
-            Du är min trygghet, min bästa vän
-            och den jag vill bygga hela livet med.
-        </p>
+  <main class="container" role="main">
+    <h1>Hejsan 💗</h1>
 
-        <p class="signature">
-            Du är min Straci ❤️ I LOVE UUUUU ❤️ 
+    <p>
+      Jag ville göra något speciellt för dig. Så därför skapade jag denna sidan
+      som du alltid kan gå in på när du har en dålig eller en bra dag.
+    </p>
+
+    <p>
+      Du är min trygghet, min bästa vän och den jag vill bygga hela livet med.
+    </p>
+
+    <p class="signature">
+      Du är min Straci 💗 I LOVE UUUUU 💗
+    </p>
+
+    <div class="divider"></div>
+
+    <section class="actions" aria-label="Extra kärlek">
+      <button id="toggleSecretBtn" class="btn">
+        Klicka här om du behöver extra kärlek 💌
+      </button>
+
+      <div id="secret" class="secret" hidden>
+        <p class="secret-title">Hemligt meddelande ✨</p>
+        <p>
+          När du känner dig trött, stressad eller bara behöver en liten push:
+          <strong>jag är alltid på din sida</strong>. Jag tror på dig mer än
+          du anar, och jag är så stolt över dig.
         </p>
-    </div>
+      </div>
+
+      <button id="reasonBtn" class="btn btn-secondary">
+        Varför jag älskar dig (klicka) ❤️
+      </button>
+
+      <p id="reasonOutput" class="reason" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
