@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background-color: #f48fb1; /* Mellanrosa */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.container {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 500px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    animation: fadeIn 2s ease-in-out;
+}
+
+h1 {
+    color: #b30000; /* Djup röd */
+    font-weight: 700; /* Tjockare */
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #b30000; /* Röd text */
+    font-weight: 600; /* Tjockare */
+}
+
+.signature {
+    margin-top: 20px;
+    font-weight: 700;
+    color: #b30000;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
